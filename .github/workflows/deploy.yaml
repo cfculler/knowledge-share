@@ -12,6 +12,8 @@ jobs:
               uses: actions/checkout@v3
             - name: build images
               run: |
+                pwd
+                ls
                 docker build -t cfculler/dks_api:v1.0.1 ./api
                 docker build -t cfculler/dks_ui:v1.0.1 ./ui
 
