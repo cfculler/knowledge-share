@@ -29,6 +29,7 @@ FROM node:16-alpine AS runner
 WORKDIR /app
 ENV NODE_ENV production
 ENV NEXT_TELEMETRY_DISABLED 1
+ENV KNOWLEDGE_SHARE_API=http://localhost:8080
 
 RUN addgroup -g 1001 -S nodejs && \
   adduser -S nextjs -u 1001
