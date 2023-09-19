@@ -12,7 +12,7 @@ jobs:
               uses: actions/checkout@v3
             - name: build images
               run: |
-                docker build -t cfculler/dks_api:v1.0.2 ./api/s
+                docker build -t cfculler/dks_api:v1.0.2 ./api/
                 docker build -t cfculler/dks_ui:v2.0.1 ./ui/
 
             - name: Log in to Docker Hub
